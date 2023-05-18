@@ -1,23 +1,30 @@
-import kotlin.time.times
-
 fun main(args: Array<String>) {
 
-    println("enter the number of friend ")
-    var n = readln()?.toInt()
-    var h = readln()?.toInt()
-    var temp = 0
-    if (h != null && n != null) {
-        for (i in 1..n) {
-            var friendsHeight = readln()?.toInt()
-            if (friendsHeight != null) {
-                if (friendsHeight > h) {
-                    temp += 2
-                } else
-                    temp += 1
-            }
+val myRec = Rectangle(4 , 6 )
+
+}
+
+fun sum(vararg num: Int): Int {
+    var sum = 0
+    var toggle = false
+    for (number in num) {
+        if (toggle) {
+            sum += number
+        } else {
+            sum -= number
+        }
+        toggle = !toggle
+    }
+    return sum
+}
+
+fun findIndex(mylist: List<Int>, value: Int): Int {
+    for (i in mylist.indices) {
+        if (mylist[i] == value) { // i is index
+            return i
         }
     }
-    println(temp)
+    return -1
 }
 
 fun fib(n: Int): Int {
@@ -34,7 +41,22 @@ fun printsum(snum: Int, endnum: Int) {
     println(sum)
 }
 
-
+/*  println("enter the number of friend ")
+  var n = readln()?.toInt()
+  var h = readln()?.toInt()
+  var temp = 0
+  if (h != null && n != null) {
+      for (i in 1..n) {
+          var friendsHeight = readln()?.toInt()
+          if (friendsHeight != null) {
+              if (friendsHeight > h) {
+                  temp += 2
+              } else
+                  temp += 1
+          }
+      }
+  }
+  println(temp)*/
 /*
     var country = readLine()
     when (country) {
