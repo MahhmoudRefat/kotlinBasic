@@ -1,8 +1,22 @@
 fun main(args: Array<String>) {
 
-val myRec = Rectangle(4 , 6 )
 
-}
+
+
+
+    /*val myCircle = Circle(5.0)
+    myCircle.changeName("Opal Circle")
+    println("the Name of the Shape is: ${myCircle.name}")
+
+    val myTriangle = Triangle(3.0, 3.0, 3.0)
+    myTriangle.changeName("Cute Triangle")
+    println("the Name of the Shape is: ${myTriangle.name}")
+
+    val myRect = Rectangle(0.0, 0.0)
+    myRect.changeName("Small Rectangle")
+    println("the Name of the Shape is: ${myRect.name}")
+*/
+  }
 
 fun sum(vararg num: Int): Int {
     var sum = 0
