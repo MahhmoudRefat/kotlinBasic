@@ -1,7 +1,6 @@
 // to make this class inherited from we use Open Keyword
-open class Shape(
-    var name: String
-) {
+abstract class Shape(var name: String)
+{
     init{
         println("I am the Super Class")
     }

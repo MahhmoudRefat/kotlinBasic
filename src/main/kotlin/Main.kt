@@ -1,22 +1,64 @@
 fun main(args: Array<String>) {
+var list :List<Int> = (1 .. 20 ).toList()
+    println(list)
+    list = list.filter{it % 2 == 0
+    }
 
 
 
 
 
-    /*val myCircle = Circle(5.0)
-    myCircle.changeName("Opal Circle")
-    println("the Name of the Shape is: ${myCircle.name}")
 
-    val myTriangle = Triangle(3.0, 3.0, 3.0)
-    myTriangle.changeName("Cute Triangle")
-    println("the Name of the Shape is: ${myTriangle.name}")
 
-    val myRect = Rectangle(0.0, 0.0)
-    myRect.changeName("Small Rectangle")
-    println("the Name of the Shape is: ${myRect.name}")
-*/
-  }
+
+//    val rectangle =Rectangle.randomrec()
+//val parallelogram = object : Shape("pa",a,b,height){}
+   /* var list = listOf<Int>(1, 2, 3, 4, 5)
+    var array1 = arrayOf(1, 2, 3, 4, 5)
+    println("list: $list")
+    crazylist(array1)*/
+
+    /*  for (item  in array1) {
+          if (array1[item] % 2 == 0) {
+              println(array1[item-1])
+          } else {
+              println(array1.last())
+          }
+      }*/
+
+
+    /* val myCircle = Circle(5.0)
+      myCircle.changeName("Opal Circle")
+      println("the Name of the Shape is: ${myCircle.name}")
+
+      val myTriangle = Triangle(3.0, 3.0, 3.0)
+      myTriangle.changeName("Cute Triangle")
+      println("the Name of the Shape is: ${myTriangle.name}")
+
+      val myRect = Rectangle(0.0, 0.0)
+      myRect.changeName("Small Rectangle")
+      println("the Name of the Shape is: ${myRect.name}")
+  */
+}
+
+
+fun crazylist(array: Array<Int>) {
+    var i = 0
+    var j = array.size - 1
+    var toggle = true
+    while (i <= j) {
+        if (toggle) {
+            println(array[i])
+            i++
+        } else {
+            println(array[i])
+            j--
+        }
+        toggle = !toggle
+    }
+
+
+}
 
 fun sum(vararg num: Int): Int {
     var sum = 0
