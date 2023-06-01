@@ -1,18 +1,25 @@
+import java.lang.Math.pow
+
 fun main(args: Array<String>) {
 var list :List<Int> = (1 .. 20 ).toList()
     println(list)
+    var x = 3
+    var y = 4
+    var z = 5
+    println(" the x value os $x" )
+    println("the result of x + y : ${x + y }" )
+    println(z )
+
+    val pi = 3.14159265359
+    var raduis = 5.5F
+    println("the raduios = ${0.75* pi * pow(5.5,3.0) }")
 
 
-    var myArray = arrayOf(10,15,20,50,30,250,80)
-    var max = myArray[0]
-    for (item in myArray)
-    {
-        if(item > max)
-        {
-            max = item
-        }
-    }
-    print(max)
+    var string = "mahmoud "
+    println("out string ${string.uppercase()}")
+    println("out string ${string.reversed()}")
+
+
 
 
 
