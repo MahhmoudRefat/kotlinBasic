@@ -1,11 +1,20 @@
 fun main(args: Array<String>) {
 var list :List<Int> = (1 .. 20 ).toList()
     println(list)
-    list = list.filter{it % 2 == 0
+
+
+    println("please enter ur age ")
+    var age = readlnOrNull()?.toInt()
+    if (age != null) {
+        if (age >= 0 && age <= 18)
+            println("You are not an adult ")
+        else if (age in 19..64)
+            println("You are adult ")
+        else if (age > 65)
+            println("u are really old ")
+        else
+            println("enter a valid number ")
     }
-
-
-
 
 
 
