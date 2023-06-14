@@ -3,7 +3,16 @@ import java.lang.Math.pow
 fun main(args: Array<String>) {
 var list :List<Int> = (1 .. 20 ).toList()
 
-
+    var myArray = arrayOf(10,15,20,50,30,250,80)
+    var max = myArray[0]
+    for (item in myArray)
+    {
+        if(item > max)
+        {
+            max = item
+        }
+    }
+    print(max)
 
 
 
