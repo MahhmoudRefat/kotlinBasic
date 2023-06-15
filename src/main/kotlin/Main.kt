@@ -1,18 +1,19 @@
 import java.lang.Math.pow
 
 fun main(args: Array<String>) {
-var list :List<Int> = (1 .. 20 ).toList()
+    println("please enter ur age ")
+    var age = readlnOrNull()?.toInt()
+    if (age != null) {
+        if (age >= 0 && age <= 18)
+            println("You are not an adult ")
+        else if (age in 19..64)
+            println("You are adult ")
+        else if (age > 65)
+            println("u are really old ")
+        else
+            println("enter a valid number ")
 
-    var myArray = arrayOf(10,15,20,50,30,250,80)
-    var max = myArray[0]
-    for (item in myArray)
-    {
-        if(item > max)
-        {
-            max = item
-        }
     }
-    print(max)
 
 
 
